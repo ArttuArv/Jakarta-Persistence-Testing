@@ -7,7 +7,7 @@ Change your database settings in persistence.xml file. Create a database and run
 
 
 
-JSON data model used to populate objects;
+JSON data model used to populate objects:
 ```
 {
     "classification": {
