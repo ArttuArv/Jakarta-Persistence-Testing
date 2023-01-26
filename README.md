@@ -1,7 +1,7 @@
 # Jakarta-Persistence-Testing
 
 Simple application to test and learning Jakarta Persistence API.  
-Clone the repo and run it in your IDE.  
+Clone the repo and run it from your IDE.  
 
 Change your database settings in persistence.xml file. Create a database and run the application.  
 
