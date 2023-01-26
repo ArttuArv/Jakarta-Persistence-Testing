@@ -26,6 +26,13 @@ public class Main {
 
     }
 
+    /**
+     * Create Maakoodisto objects from JSON file. 
+     * Add one more Maakoodisto object to the list.
+     * File contains 249 Maakoodisto objects.
+     * 
+     * @return List of Maakoodisto objects
+     */
     private static List<Maakoodisto> createMaakoodistot() {
 
         List<Maakoodisto> maakoodistot = MaakoodistoUnmarshal.unmarshalArrayOfMaakoodistot(MAAKOODISTO_ARRAY);
