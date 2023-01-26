@@ -24,7 +24,7 @@ public class Main {
     }
 
     /**
-     * Create Maakoodisto objects from JSON file. 
+     * Creates Maakoodisto objects from JSON file. 
      * Add one more Maakoodisto object to the list.
      * File contains 249 Maakoodisto objects.
      * 

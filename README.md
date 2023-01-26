@@ -3,51 +3,53 @@
 Simple application to test and learning Jakarta Persistence API.  
 Clone the repo and run it in your IDE.  
 
+Change your database settings in persistence.xml file. Create a database and run the application.  
+
 
 
 JSON data model used to populate objects;
 ```
 {
-        "classification": {
-            "localId": "valtio_1_20120101",
-            "internationalRecommendation": true,
-            "nationalRecommendation": true,
-            "classificationName": [
-                {
-                    "langName": "suomi",
-                    "lang": "fi",
-                    "name": "Valtiot ja maat"
-                }
-            ],
-            "classificationDescription": [
-                {
-                    "langName": "suomi",
-                    "lang": "fi",
-                    "description": "ISO 3166 -standardin mukaiset kolminumeroiset valtioiden tunnukset"
-                }
-            ]
-        },
-        "localId": "valtio_1_20120101/004",
-        "level": 1,
-        "code": "004",
-        "order": 10,
-        "modifiedDate": "1899-12-31T22:00:00Z",
-        "parentItemLocalId": null,
-        "parentCode": null,
-        "classificationItemNames": [
+    "classification": {
+        "localId": "valtio_1_20120101",
+        "internationalRecommendation": true,
+        "nationalRecommendation": true,
+        "classificationName": [
             {
                 "langName": "suomi",
                 "lang": "fi",
-                "name": "Afganistan"
+                "name": "Valtiot ja maat"
             }
         ],
-        "explanatoryNotes": [],
-        "classificationIndexEntry": [
+        "classificationDescription": [
             {
-                "text": []
+                "langName": "suomi",
+                "lang": "fi",
+                "description": "ISO 3166 -standardin mukaiset kolminumeroiset valtioiden tunnukset"
             }
         ]
-    }
+    },
+    "localId": "valtio_1_20120101/004",
+    "level": 1,
+    "code": "004",
+    "order": 10,
+    "modifiedDate": "1899-12-31T22:00:00Z",
+    "parentItemLocalId": null,
+    "parentCode": null,
+    "classificationItemNames": [
+        {
+            "langName": "suomi",
+            "lang": "fi",
+            "name": "Afganistan"
+        }
+    ],
+    "explanatoryNotes": [],
+    "classificationIndexEntry": [
+        {
+            "text": []
+        }
+    ]
+}
 ```
 ## Database model
 ![image](https://user-images.githubusercontent.com/64365116/214856794-ae90bc1e-be8a-4361-bd44-35b5f1f4e4a8.png)
