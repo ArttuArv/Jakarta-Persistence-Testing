@@ -4,7 +4,6 @@ import org.jakarta.persistence.api.maakoodisto.test.models.*;
 import org.jakarta.persistence.api.maakoodisto.test.service.*;
 import org.jakarta.persistence.api.maakoodisto.test.utils.*;
 
-import java.util.ArrayList;
 import java.util.List;
 import java.util.logging.Logger;
 
@@ -19,8 +18,6 @@ public class Main {
     public static void main(String[] args) {
 
         List<Maakoodisto> maakoodistot = createMaakoodistot();
-
-        LOGGER.info("" + maakoodistot);
 
         MAAKOODISTO_SERVICE.persistOrMergeMaakoodistotToMySQL(maakoodistot);
 
