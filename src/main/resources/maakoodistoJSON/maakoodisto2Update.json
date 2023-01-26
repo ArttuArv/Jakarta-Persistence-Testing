@@ -1,0 +1,41 @@
+{
+  "classification": {
+    "localId": "TESTI",
+    "internationalRecommendation": true,
+    "nationalRecommendation": true,
+    "classificationName": [
+      {
+        "langName": "TESTI",
+        "lang": "fi",
+        "name": "Valtiot ja maat"
+      }
+    ],
+    "classificationDescription": [
+      {
+        "langName": "TESTI",
+        "lang": "fi",
+        "description": "ISO 3166 -standardin mukaiset kolminumeroiset valtioiden tunnukset"
+      }
+    ]
+  },
+  "localId": "valtio_1_20120101/008",
+  "level": 1,
+  "code": "008",
+  "order": 20,
+  "modifiedDate": "TESTI",
+  "parentItemLocalId": null,
+  "parentCode": null,
+  "classificationItemNames": [
+    {
+      "langName": "TESTI",
+      "lang": "fi",
+      "name": "Albania"
+    }
+  ],
+  "explanatoryNotes": ["TESTI", "TESTI", "TESTI"],
+  "classificationIndexEntry": [
+    {
+      "text": ["TESTI", "TESTI", "TESTI"]
+    }
+  ]
+}

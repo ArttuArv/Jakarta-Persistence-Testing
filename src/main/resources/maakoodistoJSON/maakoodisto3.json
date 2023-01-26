@@ -1,0 +1,41 @@
+{
+  "classification": {
+    "localId": "valtio_1_20120101",
+    "internationalRecommendation": true,
+    "nationalRecommendation": true,
+    "classificationName": [
+      {
+        "langName": "suomi",
+        "lang": "fi",
+        "name": "Valtiot ja maat"
+      }
+    ],
+    "classificationDescription": [
+      {
+        "langName": "suomi",
+        "lang": "fi",
+        "description": "ISO 3166 -standardin mukaiset kolminumeroiset valtioiden tunnukset"
+      }
+    ]
+  },
+  "localId": "valtio_1_20120101/012",
+  "level": 1,
+  "code": "012",
+  "order": 30,
+  "modifiedDate": "1899-12-31T22:00:00Z",
+  "parentItemLocalId": null,
+  "parentCode": null,
+  "classificationItemNames": [
+    {
+      "langName": "suomi",
+      "lang": "fi",
+      "name": "Algeria"
+    }
+  ],
+  "explanatoryNotes": [],
+  "classificationIndexEntry": [
+    {
+      "text": []
+    }
+  ]
+}
