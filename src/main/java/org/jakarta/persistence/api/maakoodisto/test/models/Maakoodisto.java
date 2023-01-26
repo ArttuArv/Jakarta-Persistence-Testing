@@ -18,53 +18,48 @@ import lombok.*;
 @Table(name = "jakarta_maakoodit")
 @NamedQuery(name = "Maakoodisto.findAll", query = "SELECT m FROM Maakoodisto m")
 public class Maakoodisto {
-/*
-    @OneToOne(cascade = CascadeType.ALL, mappedBy = "maakoodisto")
-    @PrimaryKeyJoinColumn
-    //@JoinColumn(name = "codeString")
-    private Classification classification; */
 
     @OneToOne(cascade = CascadeType.ALL)
     @JoinColumn(name = "luokitteluId", referencedColumnName = "luokitteluId")
-    protected Classification classification;
+    private Classification classification;
 
     @Column(name = "localId")
-    protected String localId;
+    private String localId;
 
     @Column(name = "levelNumber")
-    protected int level;
+    private int level;
 
     @Id
     @Column(name = "codeString")
-    protected String code;
+    private String code;
 
     @Column(name = "orderNumber")
-    protected int order;
+    private int order;
 
     @Column(name = "modifiedDate")
-    protected String modifiedDate;
+    private String modifiedDate;
 
     @Column(name = "parentItemLocalId")
-    protected String parentItemLocalId;
+    private String parentItemLocalId;
 
     @Column(name = "parentCode")
-    protected String parentCode;
+    private String parentCode;
 
     @Column(name = "PostPersistMessage")
-    protected String postPersistMessage;
+    private String postPersistMessage;
 
     @ElementCollection(fetch = FetchType.LAZY)
     @CollectionTable(
             name = "jakarta_maakoodit_lisatiedot",
             joinColumns = @JoinColumn(name = "maakoodistoId"))
     @Column(name = "explanatoryNotes")
-    protected List<String> explanatoryNotes;
+    private List<String> explanatoryNotes;
 
     @OneToMany(cascade = CascadeType.ALL, mappedBy = "maakoodisto", fetch = FetchType.LAZY)
-    protected List<ClassificationIndexEntry> classificationIndexEntry;
+    private List<ClassificationIndexEntry> classificationIndexEntry;
 
     @OneToMany(cascade = CascadeType.ALL, mappedBy = "maakoodisto", fetch = FetchType.LAZY)
-    protected List<ClassificationItemNames> classificationItemNames;
+    private List<ClassificationItemNames> classificationItemNames;
 
     public void setClassificationIndexEntry(List<ClassificationIndexEntry> classificationIndexEntry) {
         this.classificationIndexEntry = classificationIndexEntry;
