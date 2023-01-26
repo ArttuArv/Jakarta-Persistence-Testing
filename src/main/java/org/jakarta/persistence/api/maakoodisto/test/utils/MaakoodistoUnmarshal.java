@@ -20,7 +20,7 @@ public class MaakoodistoUnmarshal {
         }
     }
 
-    public static List<Maakoodisto> unmarshalArrayOfMaakoodistot(String maakoodistoJson) {
+    public static List<Maakoodisto> unmarshalArrayOfMaakoodistotJson(String maakoodistoJson) {
         try {
             return mapper.readerForListOf(Maakoodisto.class).readValue(maakoodistoJson);
         } catch (JsonProcessingException e) {

@@ -32,7 +32,7 @@ public class Main {
      */
     private static List<Maakoodisto> createMaakoodistot() {
 
-        List<Maakoodisto> maakoodistot = MaakoodistoUnmarshal.unmarshalArrayOfMaakoodistot(MAAKOODISTO_ARRAY);
+        List<Maakoodisto> maakoodistot = MaakoodistoUnmarshal.unmarshalArrayOfMaakoodistotJson(MAAKOODISTO_ARRAY);
 
         // Updated Maakoodisto object
         maakoodistot.add(MaakoodistoUnmarshal.unmarshalSingleMaakoodistoJsonToMaakoodistoObject(MAAKOODISTO2UPDATE));
